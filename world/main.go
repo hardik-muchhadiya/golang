@@ -19,7 +19,7 @@ type Response events.APIGatewayProxyResponse
 // Handler is our lambda handler invoked by the `lambda.Start` function call
 func Handler(ctx context.Context) (Response, error) {
 	var buf bytes.Buffer
-	fmt.Println("Tworld here")
+	fmt.Println("Tworld he")
 	body, err := json.Marshal(map[string]interface{}{
 		"message": "Okay so your other function also executed successfully!",
 	})
